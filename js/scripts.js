@@ -29,7 +29,7 @@ var selected_color = "#2A2D34";
 var about_tags = document.getElementsByClassName("single-tab");
 
 for (var a = 0; a < about_tags.length; a++) {
-
+  //dentro do onclick 
   about_tags[a].onclick = function () {
 
     for (var b = 0; b < about_tags.length; b++) {
@@ -39,6 +39,11 @@ for (var a = 0; a < about_tags.length; a++) {
 
     this.style['background-color'] = selected_color;
     this.style['font-weight'] = "bold";
+
+    //tem de criar detro do onclick
+    var selecionado = this.innerHTML;
+
+    document.getElementById("box-text").innerHTML = aboutUs[selecionado];
 
   };
 
