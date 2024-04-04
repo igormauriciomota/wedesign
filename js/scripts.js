@@ -33,7 +33,7 @@ for (var a = 0; a < about_tags.length; a++) {
   about_tags[a].onclick = function () {
 
     for (var b = 0; b < about_tags.length; b++) {
-      about_tags[b].style['background-color'] = selected_color;
+      about_tags[b].style['background-color'] = unselected_color;
       about_tags[b].style['font-weight'] = "normal";
     }
 
