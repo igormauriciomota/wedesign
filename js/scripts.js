@@ -104,8 +104,6 @@ document.getElementById("service-next").onclick = function() {
   servico_atual = servico_seguinte;
 };
 
-
-
 // Data Footer
 
 
