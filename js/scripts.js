@@ -74,6 +74,7 @@ var our_services = [
 // service-previous - service-next - service-title - service-text
 
 var servico_atual = 0;
+// ----------Onclick ceta para traz <==
 
 document.getElementById("service-previous").onclick = function() {
 
@@ -86,17 +87,29 @@ document.getElementById("service-previous").onclick = function() {
   document.getElementById("service-title").innerHTML = our_services[servico_anterior].title;
   document.getElementById("service-text").innerHTML = our_services[servico_anterior].text;
   servico_atual = servico_anterior;
-  
-
 };
+
+// ---------Onclick ceta para Frente ==>
+
+document.getElementById("service-next").onclick = function() {
+
+  if (servico_atual == our_services.length - 1) {
+    var servico_seguinte = 0;
+  } else {
+    var servico_seguinte = servico_atual + 1;
+  }
+
+  document.getElementById("service-title").innerHTML = our_services[servico_seguinte].title;
+  document.getElementById("service-text").innerHTML = our_services[servico_seguinte].text;
+  servico_atual = servico_seguinte;
+};
+
 
 
 // Data Footer
 
 
 
-  
-   
 
 
    
