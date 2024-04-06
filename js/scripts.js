@@ -111,3 +111,8 @@ ano_atual = ano_atual.getFullYear();
 document.getElementById("current_year").innerHTML = ano_atual;
 
 
+// Mapas Google map : [Escreva no google = embed google maps javascript]
+
+// Initialize and add the map
+
+

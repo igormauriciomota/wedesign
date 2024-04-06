@@ -399,6 +399,23 @@
                         <h4 class="footer-section-title">Como chegar</h4>
                         <div id="map"></div>
                     </div>
+
+                    <script>
+
+                        function initMap() {
+
+                            var Uluru = {lat: -25.344, lng: 131.031};
+
+                            var map = new google.maps.Map(
+                                document.getElementById('map'), {zoom: 4, center: Uluru});
+
+                            var marker = new google.maps.marker({position: Uluru, map: map});
+                        
+                        }
+                    </script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=--------&callback=initMap">
+
+                    </script>
                     
                     <hr></hr>
                     
