@@ -308,20 +308,27 @@
 
                     <form action="https://postmail.invotes.com/send"
                         method="post" id="email_form">
-
-                        <input type="text" name="subject" placeholder="Subject" />
-                        <textarea name="text" placeholder="Message"></textarea>
+                        <!-- Campo do Assunto -->
+                        <input type="text" name="subject" placeholder="Assunto" />   
+                        <!-- Campo do Nome-->
+                        <input type="text" name="extra_nome" placeholder="Nome" />
+                        <!-- Campo do E-Mail -->
+                        <input type="text" name="extra_email" placeholder="E-mail" />
+                        <!-- Campo da Mensagem -->
+                        <textarea name="text" placeholder="Mensagem"></textarea>
+                        <!-- Campo de Enviar -->
                         <input type="hidden" name="access_token" value="n47a3l7pgi2ry8s176toreig" />
-                        <!-- return urls can be fully qualified -OR-
-                            start with / for root relative -OR-
-                                                                Redirecionamento colocar o endereço do site no value="" --> 
+                        
+                        <!-- return urls can be fully qualified -OR- start with / for root relative -OR-Redirecionamento
+                        colocar o endereço do site no value="" -->
+                        
                         <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
                         <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
                     
 
                         <!-- set the reply-to address -->
                         <!-- <input type="text" name="reply_to"
-                                    placeholder="Your Email" /> -->
+                            placeholder="Your Email" /> -->
 
                         <!-- to append extra fields, use the extra_ prefix.
                             Entries will be appended to your message body. -->
@@ -333,7 +340,7 @@
                         <!-- <input type="hidden"
                                     name="sms_format" value="true" /> -->
                     
-                        <input id="submit_form" type="submit" value="Send" />
+                        <input id="submit_form" type="submit" value="Enviar" />
 
 
                     </form>
@@ -344,7 +351,7 @@
                         var form = document.getElementById("email_form");
                         form.addEventListener("submit", function (e) {
                             setTimeout(function() {
-                                submitButton.value = "Sending...";
+                                submitButton.value = "Enviando...";
                                 submitButton.disabled = true;
                             }, 1);
                         });
