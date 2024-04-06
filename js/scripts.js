@@ -115,4 +115,12 @@ document.getElementById("current_year").innerHTML = ano_atual;
 
 // Initialize and add the map
 
+// BOM
 
+window.onmousemove = function(e) {
+
+  if (e.pageY < 5) {
+      alert('Não perca os descontos exclusivos na seção de promoções');
+  }
+  
+  };
